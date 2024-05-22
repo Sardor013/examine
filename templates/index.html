@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+    <title>{% block title %} Bosh Sahifa {% endblock %}</title>
+
+{% block content %}
+    <h1>Hush kelibsiz!</h1>
+    <p>Bu yerda siz turli xildagi arralarni topishingiz mumkin!</p>
+    <a style="text-decoration: dashed; color: white;" href="{% url 'products:product-list' %}"><button>Uskunalarni Ko'rish</button></a>
+{% endblock content %}
