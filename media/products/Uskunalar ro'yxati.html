@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://127.0.0.1:8000/products/product-list/?page= -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Uskunalar ro'yxati</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            
+        nav {
+            background-color: #6f7274;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(85, 83, 83, 0.1);
+            flex: 1;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"],
+        button {
+            background-color: #080808;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover,
+        button:hover {
+            background-color: #078923;
+        }
+        .error-message {
+            color: red;
+            margin-top: 5px;
+        }
+        .success-message {
+            color: green;
+            margin-top: 5px;
+        }
+        footer {
+            background-color: #625d5d;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        footer .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        footer .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+        .social-icons{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="http://127.0.0.1:8000/">Home</a>
+        <a href="http://127.0.0.1:8000/products/product-list/">Products</a>
+        
+            <a href="http://127.0.0.1:8000/users/register/">Register</a>
+            <a href="http://127.0.0.1:8000/users/login/">Login</a>
+        
+    </nav>
+    <div class="container">
+        
+
+
+
+    
+    <title>Uskunalar ro'yxati</title>
+    
+    <style>
+        body {
+            font-family: Arial,  sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex; /* Display body as flex container */
+            justify-content: center; /* Center align content horizontally */
+            align-items: center; 
+            
+        
+        }
+        nav {
+            background-color: #0e0e0f;
+            color: #fff;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 870px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        h2 {
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        a {
+            text-decoration: none;
+            color: #eac83f;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .product {
+            border: 1px solid #615b5b;
+            padding: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: #fff;
+            max-width: 300px;
+        }
+        .product img {
+            width: 70%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .product a {
+            color: #000;
+            font-weight: bold;
+            text-align: center;
+            display: block;
+        }
+        .product a:hover {
+            text-decoration: underline;
+        }
+        .search-form {
+            margin-top: 20px;
+        }
+        .search-form input[type="text"] {
+            width: calc(100% - 110px);
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .search-form input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        .search-form input[type="submit"]:hover {
+            background-color: #0c0d0e;
+        }
+        .messages {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .messages li {
+            background-color: red;
+            color: #ffffff;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            max-width: 400px;
+        }
+        .c-wrapper{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+        .ft-btn{
+            padding: 10px 205px 10px 205px;
+        }
+    </style>
+
+
+    
+    <form method="get" class="search-form" action="http://127.0.0.1:8000/products/product-list/">
+        <input type="text" name="search" placeholder="Kerakli mahsulotni kiriting...">
+        <button type="submit">Qidirish</button>
+    </form>
+
+    <div class="container">
+        <div class="container">
+            <div class="ct-wrap">
+                <h2>Kategoriyalar</h2>
+                <ul>
+                    
+                        <li>
+                            <a href="http://127.0.0.1:8000/products/category-detail/4/">Elektr arra</a>
+                        </li>
+                    
+                        <li>
+                            <a href="http://127.0.0.1:8000/products/category-detail/5/">Oddiy arra</a>
+                        </li>
+                    
+                        <li>
+                            <a href="http://127.0.0.1:8000/products/category-detail/6/">Benzo arra</a>
+                        </li>
+                    
+                </ul>
+
+            </div>
+            <div class="ct-wrapper">
+                <h2>Saralash</h2>
+                <form method="get">
+                    <p>
+    <label for="id_price__gte">Price is greater than or equal to:</label>
+    <input type="number" name="price__gte" step="any" id="id_price__gte">
+    
+    
+  </p>
+
+  
+  <p>
+    <label for="id_price__lte">Price is less than or equal to:</label>
+    <input type="number" name="price__lte" step="any" id="id_price__lte">
+    
+    
+  </p>
+
+  
+  <p>
+    <label for="id_category">Category:</label>
+    <select name="category" id="id_category">
+  <option value="" selected="">---------</option>
+
+  <option value="4">Elektr arra</option>
+
+  <option value="5">Oddiy arra</option>
+
+  <option value="6">Benzo arra</option>
+
+</select>
+    
+    
+      
+    
+  </p>
+                    <button class="ft" type="submit">Saralash</button>
+                </form>
+            </div>
+        </div>
+        <h1>Product List</h1>
+        <div class="products-grid">
+            
+                <div class="product">
+                    <a href="http://127.0.0.1:8000/products/detail/22/">
+                        <img src="./Uskunalar ro&#39;yxati_files/cku8o6dennt861iniav0_3W66vDt.jpg" alt="Qo&#39;l arrasi">
+                        <p>Qo'l arrasi</p>
+                    </a>
+                </div>
+            
+                <div class="product">
+                    <a href="http://127.0.0.1:8000/products/detail/21/">
+                        <img src="./Uskunalar ro&#39;yxati_files/benzopila-stihl-ms-180-c-be-21096-1_IttCgkk.jpeg" alt="Stihl">
+                        <p>Stihl</p>
+                    </a>
+                </div>
+            
+                <div class="product">
+                    <a href="http://127.0.0.1:8000/products/detail/20/">
+                        <img src="./Uskunalar ro&#39;yxati_files/makita-dhs660z-430x430_xe4VPsN.jpg" alt="Makita">
+                        <p>Makita</p>
+                    </a>
+                </div>
+            
+                <div class="product">
+                    <a href="http://127.0.0.1:8000/products/detail/19/">
+                        <img src="./Uskunalar ro&#39;yxati_files/52860933_SGjcKAP.jpg" alt="Kalibr">
+                        <p>Kalibr</p>
+                    </a>
+                </div>
+            
+        </div>
+        <div class="pagination">
+            <span class="step-links">
+                
+    
+                <span class="current">
+                    Page 1 of 2.
+                </span>
+    
+                
+                    <a href="http://127.0.0.1:8000/products/product-list/?page=2">next</a>
+                    <a href="http://127.0.0.1:8000/products/product-list/?page=2">last »</a>
+                
+            </span>
+        </div>
+    </div>
+
+
+
+    </div>
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="./Uskunalar ro&#39;yxati_files/Facebook_f_logo_(2019).svg" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <img src="./Uskunalar ro&#39;yxati_files/Logo_of_Twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="./Uskunalar ro&#39;yxati_files/Instagram_icon.png" alt="Instagram">
+            </a>
+        </div>
+        <div>
+            <a href="http://127.0.0.1:8000/products/product-list/?page=#footer">Maxfiylik siyosati</a> |
+            <a href="http://127.0.0.1:8000/products/product-list/?page=#footer">Xizmat ko'rsatish shartlari</a> |
+            <a href="http://127.0.0.1:8000/products/product-list/?page=#footer">Biz bilan bog'lanish</a>
+        </div>
+    </footer>
+
+
+
+
+</body></html>
